@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marge_ecran">24dp</dimen>
+    <dimen name="espace_petit">4dp</dimen>
+    <dimen name="espace">8dp</dimen>
+    <dimen name="espace_moyen">16dp</dimen>
+    <dimen name="espace_grand">32dp</dimen>
+    <dimen name="espace_haut">56dp</dimen>
+    <dimen name="taille_icone">128dp</dimen>
+    <dimen name="hauteur_bouton">56dp</dimen>
+    <dimen name="texte_bouton">16sp</dimen>
+</resources>
