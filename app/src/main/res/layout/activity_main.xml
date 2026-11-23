@@ -7,13 +7,174 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageView
+        android:id="@+id/icone"
+        android:layout_width="@dimen/taille_icone"
+        android:layout_height="@dimen/taille_icone"
+        android:layout_marginTop="@dimen/espace_haut"
+        android:contentDescription="@null"
+        android:src="@mipmap/ic_launcher_round"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titre"
+        style="@style/TexteTitre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/espace_moyen"
+        android:text="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icone" />
+
+    <TextView
+        android:id="@+id/sousTitre"
+        style="@style/TexteSecondaire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/espace_petit"
+        android:text="@string/sous_titre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titre" />
+
+    <TextView
+        android:id="@+id/libelleCouleur"
+        style="@style/TexteLibelle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marge_ecran"
+        android:layout_marginTop="@dimen/espace_grand"
+        android:text="@string/votre_couleur"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sousTitre" />
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/couleur"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marge_ecran"
+        android:layout_marginTop="@dimen/espace"
+        android:layout_marginEnd="@dimen/marge_ecran"
+        app:checkedButton="@id/blancs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/libelleCouleur"
+        app:selectionRequired="true"
+        app:singleSelection="true">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/blancs"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/blancs" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/noirs"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/noirs" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/hasard"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/hasard" />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <TextView
+        android:id="@+id/libelleCreativite"
+        style="@style/TexteLibelle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marge_ecran"
+        android:layout_marginTop="@dimen/espace_grand"
+        android:text="@string/creativite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/couleur" />
+
+    <TextView
+        android:id="@+id/valeur"
+        style="@style/TexteLibelle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/marge_ecran"
+        android:textColor="?attr/colorPrimary"
+        app:layout_constraintBaseline_toBaselineOf="@id/libelleCreativite"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/creativite"
+        style="@style/Widget.Material3.Slider.Legacy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/espace"
+        android:layout_marginEnd="@dimen/espace"
+        android:stepSize="0.1"
+        android:value="0.6"
+        android:valueFrom="0.0"
+        android:valueTo="1.5"
+        app:labelBehavior="gone"
+        app:tickVisibilityMode="hidden"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/libelleCreativite" />
+
+    <TextView
+        android:id="@+id/prudent"
+        style="@style/TextePetit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marge_ecran"
+        android:text="@string/prudent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/creativite" />
+
+    <TextView
+        android:id="@+id/surprenant"
+        style="@style/TextePetit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/marge_ecran"
+        android:text="@string/surprenant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/creativite" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/nouvellePartie"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/hauteur_bouton"
+        android:layout_marginStart="@dimen/marge_ecran"
+        android:layout_marginTop="@dimen/espace_grand"
+        android:layout_marginEnd="@dimen/marge_ecran"
+        android:text="@string/nouvelle_partie"
+        android:textSize="@dimen/texte_bouton"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/prudent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/historique"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/hauteur_bouton"
+        android:layout_marginStart="@dimen/marge_ecran"
+        android:layout_marginTop="@dimen/espace_moyen"
+        android:layout_marginEnd="@dimen/marge_ecran"
+        android:text="@string/historique_parties"
+        android:textSize="@dimen/texte_bouton"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nouvellePartie" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

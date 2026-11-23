@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">Philidor</string>
+    <string name="app_name">Philidor 51M</string>
+    <string name="sous_titre">Une IA d\'échecs dans votre téléphone</string>
+    <string name="votre_couleur">Votre couleur</string>
+    <string name="blancs">Blancs</string>
+    <string name="noirs">Noirs</string>
+    <string name="hasard">Hasard</string>
+    <string name="creativite">Créativité de Philidor</string>
+    <string name="valeur_creativite">%1$.1f</string>
+    <string name="prudent">prudent</string>
+    <string name="surprenant">surprenant</string>
+    <string name="nouvelle_partie">Nouvelle partie</string>
+    <string name="historique_parties">Historique des parties</string>
+    <string name="historique">Historique</string>
+    <string name="choix_recus">%1$s · créativité %2$.1f</string>
 </resources>

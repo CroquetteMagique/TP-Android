@@ -19,17 +19,3 @@ app/src/main/assets/*.onnx
 .classpath
 .settings/
 bin/
-
-# Outils d'IA : Claude Code, plugins, skills, mémoire (jamais versionnés)
-CLAUDE.md
-CLAUDE.local.md
-**/CLAUDE.md
-**/CLAUDE.local.md
-.claude/
-.claude-plugin/
-.remember/
-.mcp.json
-.agents/
-.agent/
-skills/
-AGENTS.md
