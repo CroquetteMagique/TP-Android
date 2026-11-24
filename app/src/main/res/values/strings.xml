@@ -13,4 +13,26 @@
     <string name="historique_parties">Historique des parties</string>
     <string name="historique">Historique</string>
     <string name="choix_recus">%1$s · créativité %2$.1f</string>
+    <string name="aucune_partie">Aucune partie jouée</string>
+    <string name="lettre_victoire">V</string>
+    <string name="lettre_defaite">D</string>
+    <string name="lettre_nulle">N</string>
+    <string name="victoire">Victoire</string>
+    <string name="defaite">Défaite</string>
+    <string name="nulle">Nulle</string>
+    <string name="fin_mat">échec et mat</string>
+    <string name="fin_pat">pat</string>
+    <string name="fin_abandon">abandon</string>
+    <string name="roi_blanc">♔</string>
+    <string name="roi_noir">♚</string>
+    <string name="ligne_titre">%1$s · %2$s</string>
+    <string name="ligne_detail">%1$s · %2$s · %3$s</string>
+    <string name="supprimer_titre">Supprimer la partie ?</string>
+    <string name="supprimer_message">Cette partie sera effacée de l\'historique.</string>
+    <string name="supprimer">Supprimer</string>
+    <string name="annuler">Annuler</string>
+    <plurals name="nb_coups">
+        <item quantity="one">%d coup</item>
+        <item quantity="other">%d coups</item>
+    </plurals>
 </resources>

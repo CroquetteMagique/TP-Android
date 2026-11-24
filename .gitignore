@@ -12,10 +12,3 @@ local.properties
 
 # Le modèle Philidor : à télécharger depuis la page Releases, jamais commité.
 app/src/main/assets/*.onnx
-
-# VS Code
-.vscode/
-.project
-.classpath
-.settings/
-bin/

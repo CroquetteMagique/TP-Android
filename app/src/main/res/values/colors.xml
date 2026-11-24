@@ -7,4 +7,8 @@
     <color name="texte_secondaire">#5B6B7B</color>
     <color name="piste">#CFD8DC</color>
     <color name="fond">#FFFFFF</color>
+    <color name="victoire">#2E7D32</color>
+    <color name="defaite">#C62828</color>
+    <color name="nulle">#757575</color>
+    <color name="sur_pastille">#FFFFFF</color>
 </resources>
