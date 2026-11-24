@@ -8,13 +8,72 @@
     tools:context=".activity.GameActivity">
 
     <TextView
-        android:id="@+id/choix"
+        android:id="@+id/topBanner"
         style="@style/TexteLibelle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marge_ecran"
+        android:layout_marginTop="@dimen/espace_moyen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/status"
+        style="@style/TexteSecondaire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/espace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topBanner" />
+
+    <fr.mines.philidor.activity.ChessboardView
+        android:id="@+id/board"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/espace"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/status" />
+
+    <TextView
+        android:id="@+id/bottomBanner"
+        style="@style/TexteLibelle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marge_ecran"
+        android:layout_marginTop="@dimen/espace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/board" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/undo"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/espace"
+        android:text="@string/annuler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bottomBanner" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/marge_ecran"
+        android:layout_marginTop="@dimen/espace"
+        android:layout_marginEnd="@dimen/marge_ecran"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/undo">
+
+        <TextView
+            android:id="@+id/moves"
+            style="@style/TexteSecondaire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

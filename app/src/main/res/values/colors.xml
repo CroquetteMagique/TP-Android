@@ -11,4 +11,9 @@
     <color name="defaite">#C62828</color>
     <color name="nulle">#757575</color>
     <color name="sur_pastille">#FFFFFF</color>
+    <color name="case_claire">#EEEED2</color>
+    <color name="case_foncee">#769656</color>
+    <color name="case_surlignee">#80F6F669</color>
+    <color name="cible">#55000000</color>
+    <color name="piece">#000000</color>
 </resources>

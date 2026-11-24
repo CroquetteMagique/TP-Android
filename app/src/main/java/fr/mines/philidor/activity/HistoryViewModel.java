@@ -12,7 +12,7 @@ public class HistoryViewModel extends ViewModel {
     private final MutableLiveData<ArrayList<PlayedGame>> games = new MutableLiveData<>();
 
     public HistoryViewModel() {
-        games.setValue(generate(0));
+        games.setValue(generate(100));
     }
 
     public LiveData<ArrayList<PlayedGame>> getGames() {

@@ -35,4 +35,26 @@
         <item quantity="one">%d coup</item>
         <item quantity="other">%d coups</item>
     </plurals>
+    <string name="trait_blancs">Aux Blancs de jouer</string>
+    <string name="trait_noirs">Aux Noirs de jouer</string>
+    <string name="echec">Échec ! %1$s</string>
+    <string name="numero_coup">%d.</string>
+    <string-array name="pieces">
+        <item>♔</item>
+        <item>♕</item>
+        <item>♖</item>
+        <item>♗</item>
+        <item>♘</item>
+        <item>♙</item>
+        <item>♚</item>
+        <item>♛</item>
+        <item>♜</item>
+        <item>♝</item>
+        <item>♞</item>
+        <item>♟\uFE0E</item>
+    </string-array>
+    <string name="mat_blancs">Échec et mat ! Les Blancs gagnent</string>
+    <string name="mat_noirs">Échec et mat ! Les Noirs gagnent</string>
+    <string name="pat">Pat : partie nulle</string>
+    <string name="partie_nulle">Partie nulle</string>
 </resources>
